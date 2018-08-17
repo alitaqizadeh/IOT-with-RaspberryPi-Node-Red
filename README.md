@@ -15,3 +15,9 @@ Node-RED is a programming tool for wiring together hardware devices, APIs and on
 ### What do we want?
 
 We want to get latest price of famous CryptoCurrencies and send it via email to users.
+
+### Project steps
+
+- [We installed Raspberry Pi board and configured network before]
+
+<p align="center"><img src="raspberrypi.jpg"></p>
