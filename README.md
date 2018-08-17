@@ -18,6 +18,13 @@ We want to get latest price of famous CryptoCurrencies and send it via email to 
 
 ### Project steps
 
-- We installed Raspberry Pi board and configured network before
+- We installed Raspberry Pi board and configured network before.
 
 <p align="center"><img src="raspberrypi.jpg"></p>
+
+- From June 2018 Node-RED can be installed from the Pi Menu - Preferences - Recommended Software application installed on the Raspbian SD card image that can be downloaded from <a href="RaspberryPi.org">RaspberryPi.org<a>) otherwise We should connect to Raspberry pi with ssh and install Nod-Red on it so we can use this command:
+
+```sh
+bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)
+```
+
