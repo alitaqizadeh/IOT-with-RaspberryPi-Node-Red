@@ -49,23 +49,23 @@ http://<Raspberry Pi IP adress>:1880
 
 <p align="center"><img src="img1.jpg"></p>
 
-- We can now start our project. first of all we need to add a start point so add "Inject" module to our project and set the attribute "Payload" to true and for continuous job set attribute "Repeat" to interval.
+- We can now start our project. first of all we need to add a start point so add "Inject" node to our project and set the attribute "Payload" to true and for continuous job set attribute "Repeat" to interval.
 
 <p align="center"><img src="img2.jpg"></p>
 
 <p align="center"><img src="img3.jpg"></p>
 
-- After that we want to get the informations of CryptoCurrencies. I used <a href="https://coinmarketcap.com/">CoinMarketCap</a> API. You should add "Http Request" module to your flow and set the address of the service you want to get informations.
+- After that we want to get the informations of CryptoCurrencies. I used <a href="https://coinmarketcap.com/">CoinMarketCap</a> API. You should add "Http Request" node to your flow and set the address of the service you want to get informations.
 
 <p align="center"><img src="img4.jpg"></p>
 
 <p align="center"><img src="img5.jpg"></p>
 
-- We should convert http request to json format to get informations that we want so we added "JSON" module to our flow.
+- We should convert http request to json format to get informations that we want so we added "JSON" node to our flow.
 
 <p align="center"><img src="img6.jpg"></p>
 
-- We need a function to extract data that we want from the previous node. we added "Function" module and write some codes as bellow(we set cryptos attribute for the main variable msg):
+- We need a function to extract data that we want from the previous node. we added "Function" node and write some codes as bellow(we set cryptos attribute for the main variable msg):
 
 <p align="center"><img src="img7.jpg"></p>
 
@@ -86,4 +86,24 @@ return msg;
 <p align="center"><img src="img9.jpg"></p>
 
 <p align="center"><img src="img10.jpg"></p>
+
+- After we prepared our data we should email it so we added "email" node to our flow and set our email username and password and the target email.
+
+<p align="center"><img src="img11.jpg"></p>
+
+<p align="center"><img src="img12.jpg"></p>
+
+- Now we can check our email and see the results.
+
+<p align="center"><img src="img13.jpg"></p>
+
+- We can beautify the json result in any beautifier web site. I choosed <a href="https://codebeautify.org">Code Beautify</a>.
+
+<p align="center"><img src="img14.jpg"></p>
+
+### Conclusion
+
+We made a system with Raspberry Pi and Node-RED which get json package data from an API and extract it for our use and send it via email service rapidly and easily.
+
+You can check other fantastic projects in <a href="https://www.hackster.io/projects/tags/node+red">hasker.io</a> website.
 
