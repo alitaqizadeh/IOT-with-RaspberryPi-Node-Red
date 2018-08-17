@@ -41,4 +41,10 @@ node-red
 ```
 <p align="center"><img src="img0.jpg"></p>
 
+- As you see at the image on top Nod-Red served on port 1880 so we can access Nod-Red from anywhere with the following address:
+
+```sh
+http://<Raspberry Pi IP adress>:1880
+```
+
 
