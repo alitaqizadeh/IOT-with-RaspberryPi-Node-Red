@@ -49,5 +49,10 @@ http://<Raspberry Pi IP adress>:1880
 
 <p align="center"><img src="img1.jpg"></p>
 
+- We can now start our project. first of all we need to add a start point so add "Inject" module to our project and set the attribute "Payload" to true and for continuous job set attribute "Repeat" to interval.
+
+<p align="center"><img src="img2.jpg"></p>
+
+<p align="center"><img src="img3.jpg"></p>
 
 
