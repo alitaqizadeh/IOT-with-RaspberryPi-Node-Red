@@ -47,4 +47,7 @@ node-red
 http://<Raspberry Pi IP adress>:1880
 ```
 
+<p align="center"><img src="img1.jpg"></p>
+
+
 
