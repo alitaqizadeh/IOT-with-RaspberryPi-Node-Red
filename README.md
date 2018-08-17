@@ -55,4 +55,11 @@ http://<Raspberry Pi IP adress>:1880
 
 <p align="center"><img src="img3.jpg"></p>
 
+-After that we want to get the informations of CryptoCurrencies. I used <a href="https://coinmarketcap.com/">CoinMarketCap</a> API. You should add "Http Request" module to your flow and set the address of the service you want to get informations.
+
+<p align="center"><img src="img4.jpg"></p>
+
+<p align="center"><img src="img5.jpg"></p>
+
+
 
