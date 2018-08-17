@@ -28,3 +28,9 @@ We want to get latest price of famous CryptoCurrencies and send it via email to 
 bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)
 ```
 
+- After the installation for using email module we should install it too. go to ~/.nod-red and run the following command:
+
+```sh
+npm i node-red-node-email
+```
+
