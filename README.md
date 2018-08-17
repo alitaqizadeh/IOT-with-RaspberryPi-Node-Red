@@ -18,6 +18,6 @@ We want to get latest price of famous CryptoCurrencies and send it via email to 
 
 ### Project steps
 
-- [We installed Raspberry Pi board and configured network before]
+- We installed Raspberry Pi board and configured network before
 
 <p align="center"><img src="raspberrypi.jpg"></p>
