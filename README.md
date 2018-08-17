@@ -28,7 +28,7 @@ We want to get latest price of famous CryptoCurrencies and send it via email to 
 bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)
 ```
 
-- After the installation for using email module we should install it too. go to ~/.nod-red and run the following command:
+- After the installation for using email module we should install it too. Go to ~/.nod-red and run the following command:
 
 ```sh
 npm i node-red-node-email
@@ -55,11 +55,31 @@ http://<Raspberry Pi IP adress>:1880
 
 <p align="center"><img src="img3.jpg"></p>
 
--After that we want to get the informations of CryptoCurrencies. I used <a href="https://coinmarketcap.com/">CoinMarketCap</a> API. You should add "Http Request" module to your flow and set the address of the service you want to get informations.
+- After that we want to get the informations of CryptoCurrencies. I used <a href="https://coinmarketcap.com/">CoinMarketCap</a> API. You should add "Http Request" module to your flow and set the address of the service you want to get informations.
 
 <p align="center"><img src="img4.jpg"></p>
 
 <p align="center"><img src="img5.jpg"></p>
+
+- We should convert http request to json format to get informations that we want so we added "JSON" module to our flow.
+
+<p align="center"><img src="img6.jpg"></p>
+
+- We need a function to split data that we want from the previous node. we added "Function" module and write some codes as bellow(we set cryptos attribute for the main variable msg):
+
+<p align="center"><img src="img7.jpg"></p>
+
+```sh
+var item;
+var newMsg = {};
+for (item in msg.payload.data) {
+    newMsg[msg.payload.data[item].name] = msg.payload.data[item].quotes.USD.price+' $';
+}
+msg.cryptos = newMsg;
+return msg;
+```
+
+<p align="center"><img src="img8.jpg"></p>
 
 
 
