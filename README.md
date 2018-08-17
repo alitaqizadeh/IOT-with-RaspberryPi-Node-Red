@@ -34,3 +34,11 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/
 npm i node-red-node-email
 ```
 
+- Now we can run node-red with the following command:
+
+```sh
+node-red
+```
+<p align="center"><img src="img0.jpg"></p>
+
+
