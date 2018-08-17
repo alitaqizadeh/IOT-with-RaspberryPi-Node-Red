@@ -65,7 +65,7 @@ http://<Raspberry Pi IP adress>:1880
 
 <p align="center"><img src="img6.jpg"></p>
 
-- We need a function to split data that we want from the previous node. we added "Function" module and write some codes as bellow(we set cryptos attribute for the main variable msg):
+- We need a function to extract data that we want from the previous node. we added "Function" module and write some codes as bellow(we set cryptos attribute for the main variable msg):
 
 <p align="center"><img src="img7.jpg"></p>
 
@@ -81,5 +81,9 @@ return msg;
 
 <p align="center"><img src="img8.jpg"></p>
 
+- In this step we have msg.cryptos but the default main variable in this system is msg with payload attribute(msg.payload) that we can call it later so we should add "Change" node to change the variable msg.payload to msg.cryptos.
 
+<p align="center"><img src="img9.jpg"></p>
+
+<p align="center"><img src="img10.jpg"></p>
 
